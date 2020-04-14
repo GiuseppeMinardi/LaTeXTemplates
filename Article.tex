@@ -1,0 +1,310 @@
+\documentclass[11pt, onecolumn, twoside]{article}
+
+% Babel is used fot language
+\usepackage[english]{babel}
+
+% Geometry is used for margin and general lenghts
+\usepackage[a4paper, width=160mm]{geometry}
+
+% Font packages
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+% Fancyhdr is used fr headers and footers
+% This is for oneside documents
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{<++>}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+% Images using graphicx and subfigures using subcaption
+\usepackage{sidecap}
+\usepackage{graphicx}
+\graphicspath{ {imgs/} }
+\usepackage{subcaption}
+\usepackage[font=small,labelfont=bf]{caption}
+
+% Pretty Table formatting
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+% Multicolumns
+\usepackage{multicol}
+
+% Lists
+\usepackage[inline]{enumitem}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{Col1}{RGB}{0,0,0}
+\definecolor{Col2}{RGB}{0,0,0}
+\definecolor{Col3}{RGB}{0,0,0}
+
+% Eventual title formatting
+\usepackage{titlesec}
+\titleformat{\section}[hang]{\Large\bfseries\scshape\color{Col1}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{Col2}}{}{0pt}{}
+\titleformat{\subsubsection}{\bfseries\itshape\color{Col2}}{}{0pt}{}
+\titleformat{\paragraph}[runin]{\bfseries\scshape\color{Col3}}{}{0pt}{}
+
+% Eventual table of contents formatting
+\usepackage{titletoc}
+\titlecontents{section}[3mm]{\large\scshape\bfseries\relax}{}{}{\titlerule{\thecontentspage}}
+\titlecontents{subsection}[10mm]{\normalsize\scshape\relax}{}{}{\dotfill\makebox[1em][l]{\thecontentspage}}
+\titlecontents{subsubsection}[15mm]{\normalsize\small\relax}{}{}{\dotfill\makebox[1em][l]{\thecontentspage}}
+
+% Trademarks and that kind of shit
+\usepackage{textcomp}
+
+% orizzontal enumration
+\usepackage[inline]{enumitem}
+
+% Links
+%\usepackage[colorlinks,
+%            linkcolor=black,
+%            urlcolor=MidnightBlue,
+%            citecolor=black,
+%            plainpages=false,
+%            pdfpagelabels,
+%            unicode,
+%            breaklinks,
+%            pdfauthor={Giuseppe Minardi},
+%            pdftitle={<++>},
+%            pdfcreator={Giuseppe Minardi}]{hyperref}
+
+% Bibliography anagment with BIBER
+\usepackage[backend=biber,
+            style=nature,
+            citestyle=numeric-comp]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Supplementary Files
+\usepackage{xr}
+
+% Title
+\title{<++>}
+\author{Giuseppe Minardi}
+%\date{}
+
+
+\begin{document}\sloppy
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+
+5 to 7 sentences describing problem to solve and main results
+
+\end{abstract}
+
+\twocolumn
+
+\section{Introduction}\label{introduction}
+
+With ``mental disorders'' are classified a set of pa\-tho\-lo\-gies that are generally characterized by a com\-bi\-na\-tion of abnormal thoughts, perceptions, e\-mo\-ti\-ons, behaviour and relationships with others.
+Men\-tal disorders include: depression, bipolar affective disorder, schi\-zo\-phre\-nia and other psychoses such as dementia, intellectual disabilities and developmental disorders including autism.
+There are effective strategies for preventing mental disorders, treatments and ways to alleviate the suffering caused by them.
+
+\subsection{Depression}\label{depression}
+
+Depression is a common mental disorder and one of the main causes of morbidity worldwide. Globally, an estimated 300 million people are affected by depression.
+
+Depression is characterized by sadness, loss of interest or pleasure, feelings of guilt or low self-worth, disturbed sleep or appetite, tiredness, and poor concentration.
+People with depression may also have multiple physical complaints with no apparent physical cause.
+Depression can be long-lasting or recurrent, substantially impairing people's ability to function at work or school and to cope with daily life. At its most severe, depression can lead to suicide.
+
+\subsection{Bipolar disorder}\label{bipolar-disorder}
+
+This disorder affects about 60 million people worldwide.
+Bipolar disorder typically consists of both manic and depressive episodes separated by periods of normal mood.
+Manic episodes involve elevated or irritable mood, over-activity, pressure of speech, inflated self-esteem and a decreased need for sleep.
+People who have manic attacks but do not experience depressive episodes are also classified as having bipolar disorder.
+
+\subsection{Schizophrenia}\label{schizophrenia}
+
+Schizophrenia is a severe mental disorder, affecting about 23 million people worldwide.
+Psychoses, including schizophrenia, are characterized by distortions in thinking, perception, emotions, language, sense of self and behaviour.
+Common psychotic experiences include hallucinations (hearing, seeing or feeling things that are not there) and delusions (fixed false beliefs or suspicions that are firmly held even when there is evidence to the contrary).
+The disorder can make it difficult for people affected to work or study normally.
+Schizophrenia typically begins in late adolescence or early adulthood. With appropriate treatment and social support, affected people can lead a productive life, be integrated in society.
+
+\subsection{Demographic and treatments}\label{demographic-and-treatments}
+
+Determinants of mental health and mental disorders include not only individual attributes such as the ability to manage one's thoughts, emotions, behaviours and interactions with others, but also social, cultural, economic, political and environmental factors such as national policies, social protection, standards of living, working conditions, and community support.
+Stress, genetics, nutrition, perinatal infections and exposure to environmental hazards are also contributing factors to mental disorders.
+
+Health systems have not yet adequately responded to the burden of mental disorders.
+As a consequence, the gap between the need for treatment and its provision is wide all over the world. i
+In low- and middle-income countries, between 76\% and 85\% of people with mental disorders receive no treatment for their disorder. In high-income countries, between 35\% and 50\% of people with mental disorders are in the same situation.
+
+Mental disorders are treated with drugs that inibits or excite important pathways (for example SSRI are used in order to treat depresion and bipolar disorders).
+Not only around 20\% of all patient treated with antidepressant seems to not show any improvement, but drugs used have drammatical side effects such as lowered gastrointestinal motility or constipation, urinary retention, cognitive or memory impairment, and increased body temperature.
+Schizophrenia is treated with drugs such as non-selecive serotonin reuptake inhibitors, sigma-1 receptor agonists\footnote{Function of these receptors is poorly understood}, isotreonin (can cause birth defects) or toluene.
+
+Mental disorders are yet to be fullly understood and the expression of differentneuronal cells can give some insight on possible target for new drugs.
+Several risk genes, such as DISC1, have been associated with schizophrenia as well as bipolar disorder (BPD) and major depressive disorder (MDD), consistent with the hypothesis that a shared genetic architecture could contribute to divergent clinical syndromes.
+The present study compared gene expression profiles (GPL570 {[}HG-U133 Plus 2{]} Affymetrix Human Genome U133 Plus 2.0 Array) across three brain regions in post-mortem tissue from matched subjects with schizophrenia, BPD or MDD and unaffected controls.
+Post-mortem brain tissue was collected from control subjects and well-matched subjects with schizophrenia, BPD, and MDD (n=19 from each group).
+RNA was isolated from hippocampus, Brodmann Area 46, and associative striatum and hybridized to U133\_Plus2 Affymetrix chips.
+Data were normalized by RMA, subjected to pairwise comparison followed by Benjamini and Hochberg False Discovery Rate correction (FDR).
+
+\begin{itemize}
+\item approach described in this report
+\end{itemize}
+
+\section{Methods}\label{methods}
+
+
+\subsection{Preliminary analysis}
+We start analizing metadata taken from the GSE.
+Metadata contains features of each GSM such as gender, RIN, PMI, age, race, tissue and pH.
+
+As stated above depression, bipolar disorder and schizophrenia aren't homogeneous in the population sice they affect men and wemen in different proportions and at different age.
+In this study the proportion of men and wemen (93 females and 112 males) do not respect the one expected from the population.
+Age distribution between both genders can be found in figure~\ref{fig:Age} where is possible to see that between sexes and genders dirtributions are not equal.
+This phenomenon can arise boh from biases in sample collection and from the nature of the disease.
+
+\begin{table*}
+    \centering
+    \caption{Summary statistics of the metadata}
+    \label{tab:summary}
+    \begin{tabular}{@{\extracolsep{5pt}}lrrrrrrr}
+        \toprule
+        Statistic & N   & Mean  & St. Dev. & Min    & Pctl(25) & Pctl(75) & Max \\
+        \midrule
+        Age       & 205 & 46.566& 9.726    & 22.000 & 41.000   & 52.000   & 68.000 \\
+        pH        & 205 & 6.568 & 0.267    & 5.970  & 6.400    & 6.700    & 7.300 \\
+        PMI       & 205 & 19.856& 5.998    & 5.980  & 14.500   & 24.200   & 31.900 \\
+        RIN       & 205 & 7.651 & 0.843    & 5.500  & 7.000    & 8.300    & 9.300 \\
+        \bottomrule
+    \end{tabular}
+\end{table*}
+
+RIN (a measure of the RNA integrity), PMI (post mortem interval) and the pH can be correlated to the integrity of the sample, pH can also be an index of the stress of the cell.
+Cheching if those variables are dependent between one and another can be important in order to decide eventual filters in the data.
+If figure~\ref{fig:corplot} is represented a corplot between all numerical variables in the metadata.
+
+An Analisys of Variance test is performed (table~\ref{tab:ANOVA}) in order to see if the pH is correlated with one of the factor of the dataset.
+The Disese state is fount significally correlated with pH.
+In figure~\ref{fig:pH} is possible to see a violin plot that displays how different disease state shows different pH distribution.
+
+\begin{table}[htb!]
+    \centering
+    \caption{ANOVA}
+    \label{tab:ANOVA}
+    \begin{adjustbox}{max width=\columnwidth}
+\begin{tabular}{ lrrrrr}
+    \toprule
+                    &Df &Sum Sq &Mean Sq &F value &Pr(>F)\\
+    \midrule
+    Disease State   &3  &0.576  &0.19207 &2.739   &\textbf{0.0446}\\
+    Tissue          &2  & 0.004 &0.00217 &0.031   &0.9695\\
+    Gender          &1  &0.034  &0.03404 &0.485   &0.4868\\
+    Residuals       &198&13.885 &0.07013 &        &      \\
+    \bottomrule
+\end{tabular}
+    \end{adjustbox}
+\end{table}
+\begin{figure}[hb!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{violinPHDisease.png}
+    \caption{pH violin plot.}
+    \label{fig:pH}
+\end{figure}
+
+pH could be related to the degradation of the cell but our preliminary analisys suggests that pH can be relaed to the disease both looking at the analisys of variance (Table~\ref{tab:ANOVA}) and at the violin plot (Figure~\ref{fig:pH}).
+Since both PMI and RIN are withing ``safe'' values and the correlation between PMI, RIN ad pH is weak we all values are kept.
+
+\subsubsection{Normalization}
+
+Normalization is peformed subtracting the column means from the corresponding columns and then scaling by dividing the (centered) columns by their standard deviations.
+
+\subsection{Principal Component Analysis}
+
+PCA can be useful in order to have an idea on next tests and algorithms.
+PCA is first performed on the whole dataset (Figure~\ref{fig:PCAGlobal}), the results is that the PCA --not surprisingly-- divide perfectly samples from different tissues.
+Therefore the dataset is divided in 3 smaller ones based on the ``Tissue'' variable (associative striatum, hippocampus, Pre-frontal cortex).
+PCA for each subset can be found in \sfref{fig:PCAsubsetted} where a clear separation cannot be found.
+
+\begin{SCfigure*}
+    \centering
+    \includegraphics[width=0.7\textwidth]{PCAGlobal.png}
+    \caption{PCA of the global dataset. Expression differences between tissues is so high that masks any other feature in the plot.}
+    \label{fig:PCAGlobal}
+\end{SCfigure*}
+
+\subsection{Unsupervised Learning}
+Unsupervised machine learning algorithms infer patterns from a dataset without reference to known, or labeled, outcomes.
+Unlike supervised machine learning, unsupervised machine learning methods cannot be directly applied to a regression or a classification problem, unsupervised learning can instead be used for discovering the underlying structure of the data.
+
+Both K-means and Hierarchical Clustering is applied on the dataset divided by the tissue.
+An example of both algorithm can be found in \sfref{fig:unsupervisdClustering}, both algorithm were performed with $k=4$ in order to discover eventual patterns that could be exploited to find differences between pathologies.
+
+Both algorithms are not able to find a clean separation between pathologies.
+K-means seems to perform better than Hierarchical Clustring \footnote{Hierarchical Clustering was performed using Minkowski distance but with other kinds of distance metrics the results do not improve}, both algorithms are sensible to outliers but our prior knowledge relative to gene expression in mental pathologies do not allow us to remove any points in the dataset.
+Since all genes are taken in consideration we reuced the number and performed again both algorithms but results did not improved (data not shown).
+
+\subsection{Supervised Learning}\label{supervisedLerning}
+Supervised machine learning algorithms uncover insights, patterns, and relationships from a labeled training dataset.
+Here we used three types of supervised learning algorithm (random forest, LDA, SVM and LASSO regression) in order to create a predictive models for depression, schizophrenia and bipolar disorder.
+Classifications are performed separately on each subset based on the tissue.
+Every classification is performed using the \textit{caret} R package except the Random Forest, where \textit{randomForest} package is used.
+
+For each tissue ANOVA is performed in order to find p-values fo each gene possibly related to a pathology selecting all genes with a p-value lower than 0.0001.
+
+\begin{table*}
+    \centering
+    \caption{Specificity, sensitivity and AUR for each model divided by each tissue.}
+    \label{tab:classifiers}
+    \begin{tabular}{llrrrr}
+        \toprule
+                                     &                   & Random Forest &  LDA  &  SVM  & Lasso \\
+        \midrule
+        \small{Assotiative Striatum} & Sensitivity (mean)& 0.296         & 0.679 & 0.810 & 0.804 \\
+        \small{Number of genes: 407} & Specificity (mean)& 0.783         & 0.899 & 0.914 & 0.941 \\
+                                     & AUR               & 0.660         & 0.724 & 0.766 & 0.901 \\
+        \midrule
+        \small{Prefrontal Cortex}    & Sensitivity (mean)& 0.575         & 0.893 & 0.783 & 0.917 \\
+        \small{Number of genes: 880} & Specificity (mean)& 0.842         & 0.941 & 0.923 & 0.962 \\
+                                     & AUR               & 0.775         & 0.941 & 0.806 & 0.958 \\
+        \midrule
+        \small{Hippocampus}          & Sensitivity (mean)& 0.167         & 0.893 & 0.783 & 0.917 \\
+        \small{Number of genes: 470} & Specificity (mean)& 0.736         & 0.941 & 0.923 & 0.962 \\
+                                     & AUR               & 0.558         & 0.927 & 0.806 & 0.958 \\
+        \bottomrule
+    \end{tabular}
+\end{table*}
+
+
+\begin{itemize}
+\item algorithm/methods
+\item specific tools used
+\item value of parameters used - if not reported in Results section
+\end{itemize}
+
+\section{Results}\label{results}
+In this section results are presented divided by tissue.
+
+\begin{itemize}
+\item graphs
+\item tables of performance metrics
+\item biological interpretation, ie results of enrichment/network analysis (if available)
+\end{itemize}
+
+\section{Discussion}\label{discussion}
+
+\begin{itemize}
+\item summary of results
+\item comparison with previous results (if available)
+\item was our approach able to address the known issues?
+\item possible real world applications of our results
+\end{itemize}
+
+\printbibliography
+\end{document}
